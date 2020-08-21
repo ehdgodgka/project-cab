@@ -1,0 +1,24 @@
+.modal {
+  max-width: 960px;
+  min-width: 350px;
+  width: 70%;
+  margin: 50px;
+  padding: 50px;
+  z-index: 20;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px black;
+  position: absolute;
+  top: 0;
+  bottom: auto;
+  left: 15%;
+  // min-height: 100%;
+  transition: all 0.3s ease-out;
+  border-radius: 2px;
+
+  &__close-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+}

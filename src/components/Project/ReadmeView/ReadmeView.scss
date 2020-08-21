@@ -1,0 +1,10 @@
+@import '../../../assets/font.scss';
+.markdown {
+  font-family: $font-monst;
+  h1 {
+    font-family: $font-merri;
+  }
+  img {
+    max-height: 300px;
+  }
+}

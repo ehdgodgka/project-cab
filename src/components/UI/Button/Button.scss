@@ -1,0 +1,29 @@
+.button {
+  border: none;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  &--big{
+    padding: 10px;
+  }
+  &--rounded{
+    border-radius: 50%;
+  }
+  &--circle {
+    border-radius: 50%;
+  }
+  &--trans {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 5px;
+    border-radius: 5px;
+  }
+  &--danger {
+    color: red;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+  &:focus {
+    outline: none;
+  }
+}

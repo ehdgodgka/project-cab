@@ -1,0 +1,39 @@
+@import '../../assets/font.scss';
+.title {
+  &--brand {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    color: var(--point);
+    font-size: 1rem;
+    letter-spacing: 2px;
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    font-family: $font-monst;
+    font-weight: bold;
+  }
+
+  &--main {
+    margin-top: 10px;
+    font-size: 2rem;
+    font-family: $font-merri;
+    color: var(--primary);
+
+    img {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  &--sub {
+    color: var(--secondary);
+
+    font-family: $font-monst;
+    font-style: italic;
+  }
+
+  &--center {
+    text-align: center;
+  }
+}

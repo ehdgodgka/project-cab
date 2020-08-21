@@ -1,0 +1,62 @@
+@import '../../../assets/font.scss';
+.project {
+  width: 300px;
+  height: 300px;
+  margin: 20px 0;
+  font-family: $font-monst;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.8);
+  &__edit-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+  &__image {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  &__title {
+    font-size: 1.1rem;
+    margin: 15px 0 30px;
+    color: var(--primary);
+  }
+  &__links {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  &__link {
+    font-size: 0.8rem;
+    line-height: 20px;
+    color: var(--primary);
+
+    display: flex;
+    align-content: center;
+    background-color: whitesmoke;
+    box-shadow: 1px 1px 2px rgba(138, 138, 138, 0.5);
+    border-radius: 5px;
+    padding: 2px;
+    &:hover {
+      cursor: pointer;
+    }
+    a:link,
+    a:visited {
+      text-decoration: none;
+      color: var(--primary);
+    }
+    &--disabled {
+      box-shadow: none;
+      color: lightgray;
+      a:link {
+        cursor: not-allowed;
+        color: lightgray;
+      }
+      &:hover {
+        cursor: default;
+      }
+    }
+  }
+}
